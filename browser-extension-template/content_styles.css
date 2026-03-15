@@ -1,0 +1,25 @@
+/**
+ * CONTENT_STYLES.CSS - CSS that gets injected into every page
+ * Specified in manifest.json under content_scripts
+ */
+
+/* Example: Highlight all links in a subtle way */
+a {
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #667eea !important;
+}
+
+/* Example: Style code blocks */
+code, pre {
+    background: #f5f5f5;
+    border-left: 3px solid #667eea;
+    padding: 2px 6px;
+}
+
+/* Make sure our extension elements stay on top */
+[data-extension-element="true"] {
+    z-index: 999999 !important;
+}
