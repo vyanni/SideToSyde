@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Extension</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>My Extension</h2>
+        
+        <div class="controls">
+            <button id="modifyPageBtn" class="btn">Modify Current Page</button>
+            <button id="getPageDataBtn" class="btn">Get Page Data</button>
+            <button id="toggleExtensionBtn" class="btn btn-secondary">Toggle Extension</button>
+        </div>
+
+        <div id="status" class="status"></div>
+        <div id="output" class="output"></div>
+
+        <hr>
+        <h3>Settings</h3>
+        <label>
+            <input type="checkbox" id="enableToggle">
+            Enable extension on all pages
+        </label>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
